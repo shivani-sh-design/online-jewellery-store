@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <title>jewellery website</title>
+
+  <!-- font awesome cdn  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section id="banner">
+    <img src="./images/logo-1.jpg" class="logo" />
+    <div class="banner-text">
+      <h1>
+        THE JEWELLERY YOU DESIRE,<br />
+        NOW WITH IN YOUR REACH!
+
+      </h1>
+
+      <p>ITS TIME TO INDULGE IN AN EVERLASTING SPARKLE!</p>
+      <div class="banner-btn">
+        <a href="#"><span></span>Find Out</a>
+        <a href="#"><span></span>Read More</a>
+      </div>
+    </div>
+  </section>
+  <div id="sidenav" class="toggle">
+    <nav>
+      <ul>
+        <li><a href="#">ENRICLE</a></li>
+        <li><a href="#">BRANDS</a></li>
+        <li><a href="#">GOLD RATE</a></li>
+        <li><a href="#">WISHLIST</a></li>
+        <li><a href="#">CURRENCY SELECTOR</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img src="./images/menu_icon.png" id="menu" />
+  </div>
+
+
+
+
+  <!-- all products details here -->
+
+  <section id="details">
+    <div class="title-text">
+      <p>PRODUCTS</p>
+      <h1>ALL PRODUCTS HERE</h1>
+    </div>
+    <div class="product_container">
+
+
+      <div class="product-card">
+        <img src="./images/bracelete.jpeg" alt="bracelete" />
+        <h2>Bracelet</h2>
+        <h3>💲300/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/necklace-2.jpg" alt="necklace" />
+        <h2>NecklaceSet</h2>
+        <h3>💲800/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/nose-ring.jpeg" alt="nose-ring" />
+        <h2>NoseRing</h2>
+        <h3>💲100/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/earrings.jpg" alt="earrings" />
+        <h2>EARRINGS</h2>
+        <h3>💲400/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+      <div class="product-card">
+        <img src="./images/earrings-2-img.jpg" alt="earrings" />
+        <h2>Golden Earrings</h2>
+        <h3>💲600/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/long-nacklace.jpg" alt="long necklace" />
+        <h2>Long Necklace</h2>
+        <h3>💲600/-</h3>
+        <button onclick="showDescription()">VISIT PRODUCT</button>
+      </div>
+    </div>
+  </section>
+  <!-- description page  -->
+
+  <section id="detailedPage">
+    <i class="far fa-arrow-alt-circle-left"></i>
+    <a href="#billing-section" class="buy-btn" id="buy-now-btn" onclick="checkout()">Buy Now</a>
+  </section>
+  <!-- billing section start here  -->
+  <div class="biiling-section" id="billing-section">
+    <h2 style="text-align: center;">BILLING SECTION </h2>
+    <div class="fields">
+      <div class="formcontainer">
+        <form >
+          <div >
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="firstname"/>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+            <label for="adr">Address</label>
+            <textarea id="adr" name="adr"id="" cols="60" rows="10"></textarea>
+          </div>
+          <h3 style="color: black;">Payment:</h3>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" />
+          <label for="ccnum">Credit Card Number</label>
+          <input type="text" id="ccnum" name="cardnumber" />
+         
+            <label for="expyear"> Exp Year</label>
+            <input type="text" id="expyear" name="expyear" />
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" />
+         
+          <input type="submit" value="Continue to Checkout" class="Checkout" />
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="formcontainer" id="form-container">
+
+    <p><a style="text-decration:none;" href="#" id="checkout-item">Golden Earrings</a>
+      <span class="price" id="checkout-item-price"></span>
+    </p>
+    <p>GST: <span class="price" id="gst"></span></p>
+    <p>Total <span class="price" style="color:black" ><b id="checkout-total"></b></span> </p>
+  </div>
+</div>
+  <!--features-->
+  <section id="feature">
+    <div class="title-text">
+      <p>FEATURES</p>
+      <h1>WHY CHOOSE US</h1>
+    </div>
+    <div class="feature-box">
+      <div class="feature">
+        <h1>Experienced Staff</h1>
+        <div class="feature-desc">
+
+          <div class="feature-text">
+            <span>
+              <i class="fa fa-id-badge" aria-hidden="true"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam nam excepturi in aut
+              aspernatur quis, voluptatem incidunt, blanditiis doloribus suscipit! Cupiditate provident repellendus
+              velit, distinctio architecto itaque ipsam odit?</p>
+          </div>
+        </div>
+        <h1>Pre Booking Online</h1>
+        <div class="feature-desc">
+
+          <div class="feature-text">
+            <span>
+              <i class="fa fa-check-square-o"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam nam excepturi in aut
+              aspernatur quis, voluptatem incidunt, blanditiis doloribus suscipit! Cupiditate provident repellendus
+              velit, distinctio architecto itaque ipsam odit?</p>
+          </div>
+        </div>
+        <h1>Affordable cost</h1>
+        <div class="feature-desc">
+
+          <div class="feature-text">
+            <span>
+              <i class="fa fa-inr"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquam nam excepturi in aut
+              aspernatur quis, voluptatem incidunt, blanditiis doloribus suscipit! Cupiditate provident repellendus
+              velit, distinctio architecto itaque ipsam odit?</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-img">
+        <img src="./images/necklace.jpg">
+      </div>
+
+    </div>
+  </section>
+  <!--Services-->
+
+  <section id="service">
+    <div class="title-text">
+      <p>SERVICES</p>
+      <h1>WE PROVIDE BETTER</h1>
+    </div>
+    <div class="service-box">
+      <div class="single-service">
+        <img src="./images/bangel.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3> DIAMOND BANGLE</h3>
+          <hr>
+          <p>When you set your heart on a forever circle of trust Diamond Bangle, you surround yourself with some of the
+            world's most beautiful, rare and natural diamonds. Every diamond in these bangles has a unique inscription
+            number and an identification card making each Bangle trustworthy and yours. </p>
+
+        </div>
+      </div>
+      <div class="single-service">
+        <img src="./images/nacklace-4.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3> ANTIQUE JEWELLERY SET </h3>
+          <hr>
+          <p>When you set your heart on a forever circle of trust Diamond Bangle, you surround yourself with some of the
+            world's most beautiful, rare and natural diamonds. Every diamond in these bangles has a unique inscription
+            number and an identification card making each Bangle trustworthy and yours. </p>
+
+        </div>
+
+
+      </div>
+      <div class="single-service">
+        <img src="./images/earrings-2-img.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3> GOLDEN EARRINGS</h3>
+          <hr>
+          <p>When you set your heart on a forever circle of trust Diamond Bangle, you surround yourself with some of the
+            world's most beautiful, rare and natural diamonds. Every diamond in these bangles has a unique inscription
+            number and an identification card making each Bangle trustworthy and yours. </p>
+
+        </div>
+
+      </div>
+      <div class="single-service">
+        <img src="./images/small-green-ring.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+          <h3> SMALL GREEN DIAMOND RING</h3>
+          <hr>
+          <p>When you set your heart on a forever circle of trust Diamond Bangle, you surround yourself with some of the
+            world's most beautiful, rare and natural diamonds. Every diamond in these bangles has a unique inscription
+            number and an identification card making each Bangle trustworthy and yours. </p>
+
+        </div>
+
+      </div>
+
+  </section>
+  <!--testimonials-->
+  <section id="testimonial">
+    <div class="title-text">
+      <p>TESTIMONIAL</p>
+      <h1>WHAT CLIENT SAYS</h1>
+    </div>
+    <div class="testimonial-row">
+      <div class="testimonial-col">
+        <div class="user">
+          <img src="./images/CLIENT-3.jpeg">
+          <div class="user-info">
+            <h4>KEN NORMQN <i class="fa fa-twitter"></i></h4>
+            <small>@keynorman</small>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ipsum, adipisci nemo vel delectus, magnam quam
+          dolorum quisquam doloribus odit qui ratione laborum illum quibusdam natus? Deleniti optio natus aliquid!
+        </p>
+      </div>
+      <div class="testimonial-col">
+        <div class="user">
+          <img src="./images/client-2.png">
+          <div class="user-info">
+            <h4>LIARA KARIAN<i class="fa fa-twitter"></i></h4>
+            <small>@liarakarian</small>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ipsum, adipisci nemo vel delectus, magnam quam
+          dolorum quisquam doloribus odit qui ratione laborum illum quibusdam natus? Deleniti optio natus aliquid!
+        </p>
+      </div>
+      <div class="testimonial-col">
+        <div class="user">
+          <img src="./images/CLIENT-4.jpeg">
+          <div class="user-info">
+            <h4>SAM JASSON<i class="fa fa-twitter"></i></h4>
+            <small>@samjasson</small>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, ipsum, adipisci nemo vel delectus, magnam quam
+          dolorum quisquam doloribus odit qui ratione laborum illum quibusdam natus? Deleniti optio natus aliquid!
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
